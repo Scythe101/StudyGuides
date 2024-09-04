@@ -1918,14 +1918,6 @@ details.collapse summary::-webkit-details-marker {
   bottom: 0.5rem;
 }
 
-.right-auto {
-  right: auto;
-}
-
-.left-auto {
-  left: auto;
-}
-
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -1934,16 +1926,6 @@ details.collapse summary::-webkit-details-marker {
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .mb-16 {
@@ -2097,6 +2079,10 @@ details.collapse summary::-webkit-details-marker {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
 }
 
 @media (min-width: 1024px) {
