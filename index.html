@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Guides</title>
+    <link rel="icon" type="image/x-icon" href="/assets/home.svg">
     <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +28,23 @@
         </div>
         
     </div>
-    <div class="grid justify-start mt-40 ml-10">
-        
+    <div class="fixed flex justify-center w-screen bottom-2">
+        <button class="btn btn-primary" onClick="up()" id="uppy">Click me!</button>
     </div>
+    <script>
+        num = 0;
+
+        function up(){
+            if(localStorage.getItem("number")!=NaN){
+                num = localStorage.getItem("number");
+                num++;
+                document.getElementById("uppy").innerHTML = num;
+                localStorage.setItem("number", num);
+            } else {
+                num = 1;
+                localStorage("number", 1);
+            }
+        }
+    </script>
 </body>
 </html>
